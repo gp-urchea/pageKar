@@ -1,4 +1,4 @@
-// 🔗 ENDPOINT DE FORMSPREE (CAMBIA ESTO)
+// ENDPOINT DE FORMSPREE (CAMBIA ESTO)
 const FORM_ENDPOINT = "https://formspree.io/f/mreeobwq";
 
 // CONTROL DE PREGUNTAS
@@ -78,7 +78,7 @@ function nextQuestion() {
   }
 }
 
-// 🔒 ENVÍO SILENCIOSO (ELLA NO SE ENTERA)
+//  ENVÍO SILENCIOSO 
 function enviarRespuestasSilencioso() {
   const nombre = document.getElementById("user").value;
 
@@ -96,7 +96,7 @@ function enviarRespuestasSilencioso() {
   });
 }
 
-// BOTÓN NO (TROLL 😈)
+// BOTÓN NO 
 const noBtn = document.getElementById("noBtn");
 
 if (noBtn) {
@@ -106,3 +106,4 @@ if (noBtn) {
     noBtn.style.transform = `translate(${x}px, ${y}px)`;
   });
 }
+
