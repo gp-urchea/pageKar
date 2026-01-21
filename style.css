@@ -1,0 +1,115 @@
+body {
+  background: radial-gradient(circle, #fde2e4, #f8cdda);
+  font-family: 'Arial', sans-serif;
+  color: #4a4a4a;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* TARJETAS */
+.card {
+  background: rgba(255, 255, 255, 0.75);
+  padding: 30px;
+  border-radius: 20px;
+  width: 330px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(248, 157, 190, 0.35);
+  animation: fade 1s ease;
+}
+
+/* OCULTO */
+.hidden {
+  display: none;
+}
+
+/* INPUTS */
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border-radius: 12px;
+  border: 1px solid #f3b6c5;
+  background: #fff;
+  font-size: 0.95em;
+}
+
+input:focus {
+  outline: none;
+  border-color: #f28ab2;
+}
+
+/* BOTONES */
+button,
+.yes {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
+  border-radius: 14px;
+  border: none;
+  background: linear-gradient(135deg, #f497b6, #fbc2d9);
+  color: #ffffff;
+  font-size: 0.95em;
+  cursor: pointer;
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+button:hover,
+.yes:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(244, 151, 182, 0.4);
+}
+
+/* BOTÓN NO (troll 😈) */
+.no {
+  background: transparent;
+  color: #b76e79;
+  border: 1px solid #f3b6c5;
+  transition: transform 0.2s ease;
+}
+
+/* TEXTOS */
+h1 {
+  color: #b76e79;
+}
+
+.sub {
+  font-size: 0.85em;
+  color: #a67c87;
+  margin-bottom: 10px;
+}
+
+.text {
+  margin: 15px 0;
+  line-height: 1.5;
+  font-size: 0.95em;
+  color: #5f5f5f;
+}
+
+/* PISTAS */
+.hint {
+  font-size: 0.8em;
+  color: #d45d8b;
+  margin-top: 5px;
+}
+
+/* PREGUNTAS */
+.question p {
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #b76e79;
+}
+
+/* ANIMACIÓN */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

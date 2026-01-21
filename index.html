@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Acceso Secreto</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- LOGIN -->
+  <div id="login" class="card">
+    <h1>Bienvendia</h1>
+    <p class="sub">No cualquiera entra aquí,¿o si?</p>
+
+    <input id="user" type="text" placeholder="Tu nombre">
+    <input id="pass" type="password" placeholder="Algo sobre ti">
+
+    <button onclick="login()">Entrar</button>
+    <p id="hint" class="hint"></p>
+  </div>
+
+  <!-- CONTENIDO -->
+  <div id="content" class="card hidden">
+    <h1>Bienvenida, mi ARMY favorita 💜</h1>
+
+    <p class="text">
+      Esto no es algo grandioso.<br>
+      Es algo sencillo, hecho con intención.
+    </p>
+
+    <p class="text">
+      Pensé en ti, <br>en lo buena persona que eres conmigo,<br>en lo que te gusta,<br>
+      y en lo bonito que sería volver a salir.
+    </p>
+
+    <div class="question">
+    <p id="qText"></p>
+    <div id="answers"></div>
+    </div>
+
+  </div>
+
+  <!-- INVITACIÓN FINAL -->
+  <div id="final" class="card hidden">
+    <h1>Una última pregunta mi chica bts💜</h1>
+    <p class="text">
+      ¿Te gustaría salir conmigo antes de que empiece el estrés de la uni?
+    </p>
+
+    <a class="yes"
+       href="https://wa.me/528714240551?text=Hola%20me%20caes%20bien%20y%20sí,%20acepto%20salir%20contigo.%20(mensaje%20automatico%20lo%20puedes%20cambiar%20si%20desas)."
+       target="_blank">
+      Claro que yeeeeeeees
+    </a>
+
+    <button class="no" id="noBtn">No, me caes mal</button>
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>
